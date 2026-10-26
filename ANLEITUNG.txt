@@ -1,0 +1,21 @@
+"Was ist das?" – Lernspiel als iPhone/iPad-App (Web-App)
+=========================================================
+
+1) Ordnerinhalt auf einen beliebigen HTTPS-Webspace hochladen
+   (z. B. Unterordner auf deiner Domain, Vercel, Netlify, GitHub Pages).
+   Wichtig: HTTPS ist Pflicht, sonst gibt es kein Mikrofon und keinen Offline-Modus.
+
+   Beispiel Vercel (im entpackten Ordner):   npx vercel --prod
+
+2) Auf dem iPhone/iPad die Adresse in SAFARI öffnen.
+3) Teilen-Knopf -> "Zum Home-Bildschirm" -> Hinzufügen.
+4) App einmal starten, solange Internet da ist – danach läuft sie auch offline
+   (Spracherkennung braucht je nach iOS-Version aber Internet).
+
+Mikrofon: Beim ersten Tippen auf das Mikrofon fragt iOS nach der Erlaubnis
+für Mikrofon und Spracherkennung -> beides erlauben.
+Falls die Spracherkennung in der Home-Bildschirm-App nicht startet,
+funktioniert sie im normalen Safari-Tab; der Eltern-Knopf "✓ Richtig" geht immer.
+
+Update: Dateien ersetzen und in sw.js die Zeile CACHE = "was-ist-das-v1"
+auf v2, v3 ... hochzählen, damit iOS die neue Version lädt.
